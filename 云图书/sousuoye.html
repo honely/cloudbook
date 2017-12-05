@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>搜索页</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-transform" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="renderer" content="webkit">
+        
+        <link rel="stylesheet" type="text/css" href="css/mian.css"/>
+        <link rel="stylesheet" type="text/css" href="js/Swiper/swiper.min.css"/>
+        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script>
+        	 (function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',         
+				recalc = function () {
+				  var clientWidth = docEl.clientWidth;
+				  if (!clientWidth) return;
+				  docEl.style.fontSize = 25 * (clientWidth / 720) + 'px';
+				};
+				  if (!doc.addEventListener) return;
+				  win.addEventListener(resizeEvt, recalc, false);
+				  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+        </script>
+    </head>
+    <body>
+    	<style type="text/css">
+    		body{background: #fff;}
+    	</style>
+    	<div class="header">
+    		<div class="sousuokuang">
+    			<div class="quexiao">
+    				取消
+    			</div>
+    			<div class="left_form">
+	    			<form action="" method="post">
+	    				<div class="submit">
+	    					<input type="submit" value=""/>
+	    				</div>
+	    				<div class="text">
+	    					<input type="text" value="" placeholder="输入关键字查找"/>
+	    				</div>
+	    				<div class="qingkong">
+	    					<span><img src="images/icon-shanchu.gif"/></span>
+	    				</div>
+	    			</form>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="pd_t45 pd_b60">
+    		<div class="ssy_box">
+    			<div class="sousuo teshu">
+    				<h4>热门分类</h4>
+    				<ul class="c">
+    					<li><span>热门读物</span></li>
+    					<li><span>畅销经典</span></li>
+    					<li><span>老师推荐</span></li>
+    					<li><span>指定教辅</span></li>
+    				</ul>
+    			</div>
+    			<div class="sousuo">
+    				<h4>科普百科</h4>
+    				<ul class="c">
+    					<li><span>中国儿童文学</span></li>
+    					<li><span>外国儿童文学</span></li>
+    					<li><span>动漫卡通</span></li>
+    					<li><span>幼儿启蒙</span></li>
+    				</ul>
+    			</div>
+    			<div class="sousuo">
+    				<h4>教学辅导</h4>
+    				<ul class="c">
+    					<li><span>中小学教材辅导</span></li>
+    					<li><span>一年级</span></li>
+    					<li><span>二年级</span></li>
+    					<li><span>三年级</span></li>
+    					<li><span>四年级</span></li>
+    					<li><span>五年级</span></li>
+    					<li><span>六年级</span></li>
+    					<li><span>老师推荐</span></li>
+    					<li><span>考试模拟</span></li>
+    					<li><span>指定教辅</span></li>
+    					<li><span>励志成长</span></li>
+    				</ul>
+    			</div>
+    			<div class="sousuo">
+    				<h4>儿童文学</h4>
+    				<ul class="c">
+    					<li><span>热门读物</span></li>
+    					<li><span>新书上架</span></li>
+    					<li><span>畅销经典</span></li>
+    					<li><span>老师推荐</span></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="footer">
+    		<ul class="c">
+    			<li>
+    				<a href="index.html">
+    					<i></i>
+    					<p>公益环保</p>
+    				</a>
+    			</li>
+    			<li class="link">
+    				<a href="tushuguan.html">
+    					<i></i>
+    					<p>图书馆</p>
+    				</a>
+    			</li>
+    			<li>
+    				<a href="xuexiyuandi.html">
+    					<i></i>
+    					<p>学习园地</p>
+    				</a>
+    			</li>
+    			<li>
+    				<a href="gerenzhongxin.html">
+    					<i></i>
+    					<p>个人中心</p>
+    				</a>
+    			</li>
+    		</ul>
+    	</div>
+    </body>
+</html>
+<script type="text/javascript">
+	var _val=$('.sousuokuang .left_form .text input');
+	$(function(){
+		_val.keyup(function(){
+			if($(this).val()!=''){
+				$('.sousuokuang .left_form .qingkong').show();
+			}else{
+				$('.sousuokuang .left_form .qingkong').hide();
+			}
+		});
+	})
+	$('.sousuokuang .left_form .qingkong').click(function(){
+		_val.val('');
+		$(this).hide();
+	})
+</script>

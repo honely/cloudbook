@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>我的借阅</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-transform" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="renderer" content="webkit">
+        
+        <link rel="stylesheet" type="text/css" href="css/mian.css"/>
+        <link rel="stylesheet" type="text/css" href="js/Swiper/swiper.min.css"/>
+        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script>
+        	 (function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',         
+				recalc = function () {
+				  var clientWidth = docEl.clientWidth;
+				  if (!clientWidth) return;
+				  docEl.style.fontSize = 25 * (clientWidth / 720) + 'px';
+				};
+				  if (!doc.addEventListener) return;
+				  win.addEventListener(resizeEvt, recalc, false);
+				  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+        </script>
+    </head>
+    <body>
+    	<style type="text/css">
+    		body{background: #fff;}
+    	</style>
+    	<div class="header">
+    		<a href="" class="left_icon">
+    			<i></i>
+    		</a>
+    		<h4>我的借阅</h4>
+    		<a href="jieyuejilu.html" class="right_text">
+    			借阅记录
+    		</a>
+    	</div>
+    	<div class="pd_t45 jsd_box">
+    		<div class="nav">
+    			<ul class="c">
+    				<li>
+    					<a href="wodejieyue_jyz.html">
+    						<i>借阅中</i>
+    					</a>
+    				</li>
+    				<li class="link">
+    					<a href="wodejieyue_dgh.html">
+    						<i>待归还</i>
+    						<em></em>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    		<div class="jsd_list">
+    			<dl class="c">
+    				<dt>
+    					<img src="images/xxyd_t2.jpg"/>
+    				</dt>
+    				<dd>
+						<h4>高考命题新动向3 大题冲关 英语</h4>
+						<span>作者：蒋顺、李济元</span>
+						<p>陕西人民教育出版社</p>
+						<i>2017-08-09  已借阅</i>
+    					<div class="botton">
+    						<span class="bt1" onclick="shenqing()">预约还书</span>
+    						<span class="bt2" onclick="xujie()">续借</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list">
+    			<dl class="c">
+    				<dt>
+    					<img src="images/xxyd_t2.jpg"/>
+    				</dt>
+    				<dd>
+						<h4>高考命题新动向3 大题冲关 英语</h4>
+						<span>作者：蒋顺、李济元</span>
+						<p>陕西人民教育出版社</p>
+						<i>2017-08-09  已借阅</i>
+    					<div class="botton">
+    						<span class="bt1" onclick="shenqing()">预约还书</span>
+    						<span class="bt2" onclick="xujie()">续借</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list">
+    			<dl class="c">
+    				<dt>
+    					<img src="images/xxyd_t2.jpg"/>
+    				</dt>
+    				<dd>
+						<h4>高考命题新动向3 大题冲关 英语</h4>
+						<span>作者：蒋顺、李济元</span>
+						<p>陕西人民教育出版社</p>
+						<i>2017-08-09  已借阅</i>
+    					<div class="botton">
+    						<span class="bt1" onclick="shenqing()">预约还书</span>
+    						<span class="bt2" onclick="xujie()">续借</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list">
+    			<dl class="c">
+    				<dt>
+    					<img src="images/xxyd_t2.jpg"/>
+    				</dt>
+    				<dd>
+						<h4>高考命题新动向3 大题冲关 英语</h4>
+						<span>作者：蒋顺、李济元</span>
+						<p>陕西人民教育出版社</p>
+						<i>2017-08-09  已借阅</i>
+    					<div class="botton">
+    						<span class="bt1" onclick="shenqing()">预约还书</span>
+    						<span class="bt2" onclick="xujie()">续借</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    	</div>
+    	<div class="zhezhao"></div>
+    	<div class="tanchuceng_box xujie">
+    		<div class="tanchuceng">
+    			<h4>续借成功</h4>
+    			<i><img src="images/icon_chenggong.png"/></i>
+    			<p>
+					你的图书已续借成功，<br/>
+					续借到期时间为<em>2017-12-31</em>日，<br/>
+					到期请按时归还
+    			</p>
+    			<span onclick="xujieHide()">确定</span>
+    		</div>
+    	</div>
+    	<div class="tanchuceng_box shenqing">
+    		<div class="tanchuceng">
+    			<h4>申请成功</h4>
+    			<i><img src="images/icon_chenggong.png"/></i>
+    			<p>
+					你的还书申请已收到，<br/>
+					<em>请在周五上午，把所要归还的图书，交到各自<br/>
+					班级的排长手上，还书成功。</em>
+    			</p>
+    			<span onclick="shenqingHide()">我知道了</span>
+    		</div>
+    	</div>
+    </body>
+</html>
+<script type="text/javascript">
+	//续借方法
+	function xujie(){
+		$('.zhezhao').fadeTo(200,1);
+		$('.xujie').fadeTo(200,1);
+	}
+	function xujieHide(){
+		$('.zhezhao').fadeOut(300);
+		$('.xujie').fadeOut(300);
+	}
+	//预约还书方法
+	function shenqing(){
+		$('.zhezhao').fadeTo(200,1);
+		$('.shenqing').fadeTo(200,1);
+	}
+	function shenqingHide(){
+		$('.zhezhao').fadeOut(300);
+		$('.shenqing').fadeOut(300);
+	}
+</script>

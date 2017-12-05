@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>书籍详情</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-transform" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="renderer" content="webkit">
+        
+        <link rel="stylesheet" type="text/css" href="css/mian.css"/>
+        <link rel="stylesheet" type="text/css" href="js/Swiper/swiper.min.css"/>
+        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script>
+        	 (function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',         
+				recalc = function () {
+				  var clientWidth = docEl.clientWidth;
+				  if (!clientWidth) return;
+				  docEl.style.fontSize = 25 * (clientWidth / 720) + 'px';
+				};
+				  if (!doc.addEventListener) return;
+				  win.addEventListener(resizeEvt, recalc, false);
+				  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+        </script>
+    </head>
+    <body>
+    	<div class="header">
+    		<a href="" class="left_icon">
+    			<i></i>
+    		</a>
+    		<h4>书籍详情</h4>
+    	</div>
+    	<div class="pd_t45">
+	    	<div class="sjxq_banner">
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<a href="#">
+			            		<img src="images/sjxq_t1.jpg"/>
+			            	</a>
+			            </div>
+			            <div class="swiper-slide">
+			            	<a href="#">
+			            		<img src="images/sjxq_t1.jpg"/>
+			            	</a>
+			            </div>
+			        </div>
+			        <div class="swiper-pagination"></div>
+			    </div>
+	    	</div>
+	    	<div class="sjxq_box mg_t10">
+		    	<div class="sjxq_title">
+		    		<h4>高中生物知识大全（第5次修订）</h4>
+		    		<p>为什么越是亲密的人，我们越发挑剔？为什么越是重要的关系，我们越容易忽
+	略？为什么越是重要的对话，我们越是努力回避？……</p>
+		    		<span>库存：200本</span>
+		    	</div>
+		    	<div class="sjxq_title_ct mg_t5">
+		    		<ul>
+		    			<li>页 数：32</li>
+		    			<li>开 本：20开</li>
+		    			<li>包 装：平装-胶订</li>
+		    		</ul>
+		    	</div>
+	    		<div class="sjxq_title_bt mg_t5">
+	    			<ul>
+	    				<li>作者：于泗勇、陈英霞、陈蓉、庞涛、王驰呈</li>
+	    				<li>清华大学出版社</li>
+	    				<li>ISBN:78511564654987</li>
+	    			</ul>
+	    		</div>
+	    		<div class="sjxq_center">
+	    			书籍内容
+						为什么越是亲密的人，我们越发挑剔？为什么越是重要的关系，我们越容易忽
+						略？为什么越是重要的对话，我们越是努力回避？……
+						《高难度对话》是迈克·贝克特尔继《跟任何人都聊得来》之后推出的又一畅销
+						、冒险、成长、接纳、关联、价值，并由此引出了帮我们处理沟通难题的六工
+						具和六项技能。当我们掌握了合适的工具和技能，哪怕是面对艰难的对话，我
+						《跟任何人都聊得来》是美国金牌培训师迈克贝克特尔多年沟通力培训课程，
+						广受欢迎
+						的原因。在本书中，贝克特尔将有效人际沟通的精髓概括为5句话：
+						1.要有自信，至少显得有自信；
+						2.事先做好准备，平时多留意收集信息；
+						3．千方百计让自己变得有趣；
+						4.学会倾听，真正对对方的话题感兴趣；
+						5.也是*重要的一点，永远从他人的思维角度出发，真正把对方放在你心上。
+	    		</div>
+	    	</div>
+    	</div>
+    	<div class="sjxq_footer">
+    		<div class="left">
+    			<ul class="c">
+    				<li>
+		    			<span>
+		    				<i><img src="images/sjxq_icon.png"/></i>
+		    				<em>收藏</em>
+		    			</span>
+    				</li>
+    				<li>
+    					<a href="jieshudan.html">
+			    			<span>
+			    				<strong>5</strong>
+			    				<em>借书单</em>
+			    			</span>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    		<div class="right">
+    			<span>加入借书单</span>
+    		</div>
+    	</div>
+    </body>
+</html>
+<script type="text/javascript" src="js/Swiper/swiper.min.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper('.sjxq_banner .swiper-container', {
+        pagination : '.sjxq_banner .swiper-pagination',
+        paginationType : 'fraction',
+    });
+</script>

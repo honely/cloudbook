@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>借书单</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Cache-Control" content="no-transform" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="renderer" content="webkit">
+        
+        <link rel="stylesheet" type="text/css" href="css/mian.css"/>
+        <link rel="stylesheet" type="text/css" href="js/Swiper/swiper.min.css"/>
+        <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+        <script>
+        	 (function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',         
+				recalc = function () {
+				  var clientWidth = docEl.clientWidth;
+				  if (!clientWidth) return;
+				  docEl.style.fontSize = 25 * (clientWidth / 720) + 'px';
+				};
+				  if (!doc.addEventListener) return;
+				  win.addEventListener(resizeEvt, recalc, false);
+				  doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+        </script>
+    </head>
+    <body>
+    	<style type="text/css">
+    		body{background: #fff;}
+    	</style>
+    	<div class="header">
+    		<a href="" class="left_icon">
+    			<i></i>
+    		</a>
+    		<h4>借书单</h4>
+    	</div>
+    	<div class="pd_t45 pd_b3 jsd_box">
+    		<div class="jsd_list teshu">
+    			<span class="checkbox">
+    				<input data="0" disabled="false" type="checkbox"/>
+    				<!--当data=1时可以选中 去掉disabled-->
+    			</span>
+    			<dl class="c">
+    				<dt>
+    					<a href=""><img src="images/xxyd_t2.jpg"/></a>
+    				</dt>
+    				<dd>
+    					<a href="">
+    						<h4>高考命题新动向3 大题冲关 英语</h4>
+    						<span>作者：蒋顺、李济元</span>
+    						<p>陕西人民教育出版社</p>
+    						<i>库存：256本</i>
+    					</a>
+    					<div class="botton">
+    						<span class="bt2" onclick="shanchu(this)">删除</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list teshu">
+    			<span class="checkbox">
+    				<input data="1" type="checkbox" checked="checked"/>
+    			</span>
+    			<dl class="c">
+    				<dt>
+    					<a href=""><img src="images/xxyd_t2.jpg"/></a>
+    				</dt>
+    				<dd>
+    					<a href="">
+    						<h4>高考命题新动向3 大题冲关 英语</h4>
+    						<span>作者：蒋顺、李济元</span>
+    						<p>陕西人民教育出版社</p>
+    						<i>库存：256本</i>
+    					</a>
+    					<div class="botton">
+    						<span class="bt2" onclick="shanchu(this)">删除</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list teshu">
+    			<span class="checkbox">
+    				<input data="1" type="checkbox" checked="checked"/>
+    			</span>
+    			<dl class="c">
+    				<dt>
+    					<a href=""><img src="images/xxyd_t2.jpg"/></a>
+    				</dt>
+    				<dd>
+    					<a href="">
+    						<h4>高考命题新动向3 大题冲关 英语</h4>
+    						<span>作者：蒋顺、李济元</span>
+    						<p>陕西人民教育出版社</p>
+    						<i>库存：256本</i>
+    					</a>
+    					<div class="botton">
+    						<span class="bt2" onclick="shanchu(this)">删除</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list teshu">
+    			<span class="checkbox">
+    				<input data="1" type="checkbox" checked="checked"/>
+    			</span>
+    			<dl class="c">
+    				<dt>
+    					<a href=""><img src="images/xxyd_t2.jpg"/></a>
+    				</dt>
+    				<dd>
+    					<a href="">
+    						<h4>高考命题新动向3 大题冲关 英语</h4>
+    						<span>作者：蒋顺、李济元</span>
+    						<p>陕西人民教育出版社</p>
+    						<i>库存：256本</i>
+    					</a>
+    					<div class="botton">
+    						<span class="bt2" onclick="shanchu(this)">删除</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="jsd_list teshu">
+    			<span class="checkbox">
+    				<input data="1" type="checkbox" checked="checked"/>
+    			</span>
+    			<dl class="c">
+    				<dt>
+    					<a href=""><img src="images/xxyd_t2.jpg"/></a>
+    				</dt>
+    				<dd>
+    					<a href="">
+    						<h4>高考命题新动向3 大题冲关 英语</h4>
+    						<span>作者：蒋顺、李济元</span>
+    						<p>陕西人民教育出版社</p>
+    						<i>库存：256本</i>
+    					</a>
+    					<div class="botton">
+    						<span class="bt2" onclick="shanchu(this)">删除</span>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    	</div>
+    	<div class="jsd_footer">
+    		<div class="left">
+    			<span class="checkbox">
+    				<i>
+    					<input type="checkbox"  checked="checked" id="quanxuan"/>
+    				</i>
+    				<em>全选</em>
+    			</span>
+    			<span class="heji">
+    				合计：<em>0</em>本
+    			</span>
+    		</div>
+    		<div class="right">
+    			<a href="">立即借阅</a>
+    		</div>
+    	</div>
+    </body>
+</html>
+<script type="text/javascript">
+	//删除方法
+	function shanchu(obj){
+		$(obj).parents('.jsd_list').remove();
+	}
+	$(function(){
+		var all_checked=$('#quanxuan');//全选DOM
+		var list_checked=$(".jsd_box .jsd_list .checkbox input[data='1']");//列表单个inputDOM
+		var chknum = $(".jsd_box .jsd_list .checkbox input[data='1']").size();//获取复选个数
+		$('.jsd_footer .left .heji em').text(chknum);
+		//全选
+		all_checked.click(function(){
+			if(this.checked){
+				list_checked.each(function(){
+					var data=$(this).attr("data");
+					if(data=="1"){
+						all_checked.prop("checked",true);
+						list_checked.prop("checked",true);
+						$('.jsd_footer .left .heji em').text(chknum);
+					}
+				})
+			}else{
+				list_checked.each(function(){
+					var data=$(this).attr("data");
+					if(data=="1"){
+						all_checked.prop("checked",false);
+						list_checked.prop("checked",false);
+						$('.jsd_footer .left .heji em').text(0);
+					}
+				})
+			}
+		});
+		//单个复选
+		list_checked.click(function(){
+		    var chk = 0;
+		    list_checked.each(function () {  
+		    	var data=$(this).attr("data");
+				if(data=="1"){
+			        if(this.checked){
+			            chk++;
+			        }
+			        $('.jsd_footer .left .heji em').text(chk);
+		        }
+		    });
+		    if(chknum==chk){//全选
+		        all_checked.prop("checked",true);
+		    }else{//不全选
+		        all_checked.prop("checked",false);
+		    }	
+		})
+	});
+</script>

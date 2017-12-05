@@ -1,0 +1,63 @@
+body{
+	background: #f5f5f5;
+}
+.mon {
+	background: #fff;
+	margin-top: 1.68rem;
+	margin-bottom: 0.4rem;
+}
+.mon p:first-of-type{
+	font-size: 1.28rem;
+	color: #363636;
+	line-height: 3.2rem;
+	padding: 0 1.12rem;
+}
+.mon p:first-of-type span{
+	float: right;
+	color: #ff3600;
+}
+.mon p:last-of-type{
+	font-size: 1.04rem;
+	color: #a4a4a4;
+	line-height: 140%;
+	padding: 0 1.12rem 1rem;
+	width: 15rem;
+}
+.cont li{
+	background: #FFFFFF;
+	height: 4rem;
+	border-bottom: 1px solid #ececec;
+}
+.cont li img{
+	width: 3.12rem;
+	margin-top: 0.8rem;
+	margin-left: 1.2rem;
+	float: left;
+	margin-right: 0.6rem;
+}
+.cont li p{
+	float: left;
+	line-height: 4rem;
+	color: #363636;
+	font-size: 1.28rem;
+}
+
+.cont li input {
+	float: right;
+	width: 1.6rem;
+	height: 1.6rem;
+	background: url(../img/icon-false.png) center no-repeat;
+	background-size: cover;
+	margin-top: 1.2rem;
+	margin-right: 1.28rem;
+}
+
+.cont li input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.cont li input[type="radio"]:checked {
+	background: url(../img/icon-true.png) center no-repeat;
+	background-size: cover;
+}

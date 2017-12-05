@@ -1,0 +1,45 @@
+.cont{
+	margin: 0 0.56rem;
+}
+.df{
+	height: 3.2rem;
+	border: 1px solid #e0e0e0;
+	margin-top: 0.88rem;
+	border-radius: 0.7rem;
+	position: relative;
+}
+.df img{
+	width: 1rem;
+	position: absolute;
+	bottom: 1.1rem;
+	left: 1rem;
+}
+.df input{
+	height: 3.2rem;
+	color: #3d4149;
+	font-size: 1.12rem;
+	border: none;
+	margin-left: 3rem;
+	width: 13rem;
+}
+.cont button{
+	height: 3.2rem;
+	border: none;
+	border-radius: 0.7rem;
+	background: #68c31e;
+	margin-top: 0.88rem;
+	width: 10.4rem;
+	float: right;
+	color: #FFFFFF;
+	font-size: 1.2rem;
+}
+.pp {
+	line-height: 4rem;
+	padding: 0 2rem;
+	font-size: 1rem;
+	text-align: right;
+}
+
+.pp a {
+	color: #c2c1c1;
+}

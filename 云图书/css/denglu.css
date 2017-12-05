@@ -1,0 +1,40 @@
+.cont {
+	background: #fff;
+}
+
+.cont ul {
+	padding: 0 0.64rem;
+}
+
+.cont ul li {
+	border-bottom: 1px solid #fafafa;
+	min-height: 3.52rem;
+	padding: 0 0.72rem;
+	position: relative;
+}
+
+.cont ul li img {
+	width: 1rem;
+	position: absolute;
+	bottom: 1.1rem;
+}
+
+.cont ul li input {
+	height: 3.52rem;
+	color: #3d4149;
+	font-size: 1.12rem;
+	border: none;
+	margin-left: 2rem;
+}
+
+.pp {
+	line-height: 4rem;
+	padding: 0 2rem;
+	font-size: 1rem;
+	text-align: right;
+}
+
+.pp a {
+	margin-left: 1rem;
+	color: #c2c1c1;
+}

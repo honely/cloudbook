@@ -1,0 +1,82 @@
+body {
+	background: #f5f5f5;
+}
+
+.cont {
+	background: #fff;
+}
+
+.cont ul {
+	padding: 0 0.64rem;
+}
+
+.cont ul li {
+	border-bottom: 1px solid #fafafa;
+	min-height: 3.52rem;
+	padding: 0 0.72rem;
+}
+
+.cont ul li>p {
+	line-height: 3.52rem;
+	color: #3d4149;
+	font-size: 1.12rem;
+	float: left;
+}
+
+.cont ul li>input {
+	line-height: 3.52rem;
+	color: #3d4149;
+	font-size: 1.12rem;
+	border: none;
+}
+
+.c {
+	width: 32%;
+}
+
+.c p {
+	line-height: 3.52rem;
+	color: #3d4149;
+	font-size: 1.12rem;
+	float: left;
+}
+
+.c>div {
+	width: 4.68rem;
+	height: 1.52rem;
+	border: 1px solid #eeeeee;
+	margin-top: 1rem;
+	margin-left: 3.5rem;
+	position: relative;
+}
+
+.c>div button {
+	width: 4.68rem;
+	height: 1.52rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: none;
+	background: none;
+	text-align: left;
+	padding-left: 0.68rem;
+	color: #d0d0d0;
+}
+
+.c>div img {
+	width: 0.72rem;
+	position: absolute;
+	top: 0.6rem;
+	right: 0.52rem;
+}
+
+.cont ul li>textarea {
+	width: 21.3rem;
+	height: 5.16rem;
+	float: right;
+	margin: 1.2rem 0 2rem;
+	padding: 0.6rem;
+	font-size: 1.12rem;
+	resize: none;
+	border-color: #eeeeee;
+}

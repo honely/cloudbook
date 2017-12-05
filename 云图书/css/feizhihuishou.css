@@ -1,0 +1,12 @@
+.cont{
+	
+}
+.cont img{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.cont p{
+	padding: 0 0.65rem;
+	font-size: 0.8rem;
+	line-height: 140%;
+}

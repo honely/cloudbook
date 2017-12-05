@@ -1,0 +1,41 @@
+body{
+	background: #f5f5f5;
+}
+.cont{
+	margin: 0.88rem 0 1.92rem;
+	padding:0 0.64rem;
+	background: #FFFFFF;
+}
+.cont li{
+	border-bottom: 1px solid #e0e0e0;
+	height: 3.52rem;
+	position: relative;
+}
+.cont li p{
+	font-size: 1.12rem;
+	color: #3d4149;
+	line-height: 3.52rem;
+	float: left;
+}
+.cont li input{
+	border: none;
+	font-size: 1.12rem;
+	color: #3d4149;
+	line-height: 3.4rem;
+}
+.cont li button{
+	display: block;
+	border: none;
+	font-size: 1.12rem;
+	color: #3d4149;
+	height: 3.52rem;
+	width: 87.5%;
+	text-align: left;
+	background: none;
+}
+.cont li img{
+	width: 0.8rem;
+	position: absolute;
+	top: 1.6rem;
+	right: 1.56rem;
+}

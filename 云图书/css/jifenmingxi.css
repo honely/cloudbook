@@ -1,0 +1,20 @@
+.title{
+	height: 3.56rem;
+	border-bottom: #f0f0f0 1px solid;
+}
+.title p{
+	line-height: 3.56rem;
+	font-size: 1.04rem;
+	font-weight: 400;
+	color:#363636;
+}
+.cont{
+	border-bottom: #f0f0f0 1px solid;
+}
+.cont p{
+	color: #6d6d6d;	
+	font-size: 0.96rem;
+	line-height: 3.32rem;
+	width: 8rem;
+	text-align: center;
+}

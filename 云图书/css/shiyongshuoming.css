@@ -1,0 +1,11 @@
+.cont{
+	padding: 0.64rem;
+}
+.cont h1{
+	font-size: 1.12rem;
+	line-height: 4rem;
+}
+.cont p{
+	font-size: 0.8rem;
+	line-height: 140%;
+}

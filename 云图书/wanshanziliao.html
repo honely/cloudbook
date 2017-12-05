@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>完善资料</title>
+		<!--说明文字编码-->
+		<meta http-equiv="Content-type" content="text/html" charset="utf-8">
+		<!--针对 IE8 版本的一个特殊文件头标记，用于为 IE8 指定不同的页面渲染模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--设备物理宽度等于等于页面宽度,页面初始缩放1:1,禁止用户调整缩放-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<!--控制状态栏显示样式-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--解决uc字体变大问题-->
+		<meta name="wap-font-scale" content="no">
+		<!--手机号码不被显示为拨号链接-->
+		<meta content="telephone=no" name="format-detection" />
+		<!--页面缓存时间的最大值是0秒，目的是不让页面缓存，每次访问必须到服务器读取-->
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/wanshanziliao.css" />
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/mui.picker.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="###">
+				<img src="images/back.png" />
+			</a>
+			<p>完善资料</p>
+		</div>
+		<ul class="cont">
+			<li>
+				<p>姓名：</p>
+				<input type="text" maxlength="6" />
+			</li>
+			<li>
+				<p>学校：</p>
+				<button id="school">选择学校</button>
+				<img src="images/icon-bottom.png" />
+			</li>
+			<li>
+				<p>班级：</p>
+				<button id="garde">选择班级</button>
+				<img src="images/icon-bottom.png" />
+			</li>
+			<li>
+				<p>性别：</p>
+				<button id="sex">选择性别</button>
+				<img src="images/icon-bottom.png" />
+			</li>
+			<li>
+				<p>年龄：</p>
+				<button id="age">选择年龄</button>
+				<img src="images/icon-bottom.png" />
+			</li>
+			<li>
+				<p>家长姓名：</p>
+				<input type="text" maxlength="6" />
+			</li>
+			<li></li>
+		</ul>
+		<button class="btn">登录</button>
+		<script type="text/javascript" src="js/screenSize.js"></script>
+		<script type="text/javascript" src="js/mui.min.js" ></script>
+		<script type="text/javascript" src="js/mui.picker.js" ></script>
+		<script type="text/javascript" src="js/mui.poppicker.js" ></script>
+		<script>
+		    (function ($, doc) {
+		        $.init();
+		        $.ready(function () {
+		            var _getParam = function (obj, param) {
+		                return obj[param] || '';
+		            };
+		            var userPicker = new $.PopPicker();
+		            userPicker.setData([{
+		                value: 'ywj',
+		                text: '高新第一小学'
+		            }, {
+		                value: 'aaa',
+		                text: '高新第一小学'
+		            }, {
+		                value: 'lj',
+		                text: '高新第一小学'
+		            }, {
+		                value: 'ymt',
+		                text: '高新第一小学'
+		            }, {
+		                value: 'ymt',
+		                text: '西工大附中'
+		            }]);
+		            var showUserPicker = doc.getElementById('school');
+		            showUserPicker.addEventListener('tap', function (event) {
+		                userPicker.show(function (items) {
+		                    showUserPicker.innerText = items[0].text;
+		                    //返回 false 可以阻止选择框的关闭
+		                    //return false;
+		                });
+		            }, false);
+		        });
+		    })(mui, document);
+		    
+		    (function ($, doc) {
+		        $.init();
+		        $.ready(function () {
+		            var _getParam = function (obj, param) {
+		                return obj[param] || '';
+		            };
+		            var userPicker = new $.PopPicker();
+		            userPicker.setData([{
+		                value: 'ywj',
+		                text: '一年级三班'
+		            }, {
+		                value: 'aaa',
+		                text: '一年级二版'
+		            }, {
+		                value: 'lj',
+		                text: '二年级四版'
+		            }, {
+		                value: 'ymt',
+		                text: '二年级五班'
+		            }]);
+		            var showUserPicker = doc.getElementById('garde');
+		            showUserPicker.addEventListener('tap', function (event) {
+		                userPicker.show(function (items) {
+		                    showUserPicker.innerText = items[0].text;
+		                    //返回 false 可以阻止选择框的关闭
+		                    //return false;
+		                });
+		            }, false);
+		        });
+		    })(mui, document);
+		    
+		     (function ($, doc) {
+		        $.init();
+		        $.ready(function () {
+		            var _getParam = function (obj, param) {
+		                return obj[param] || '';
+		            };
+		            var userPicker = new $.PopPicker();
+		            userPicker.setData([{
+		                value: 'ywj',
+		                text: '男'
+		            }, {
+		                value: 'aaa',
+		                text: '女'
+		            }]);
+		            var showUserPicker = doc.getElementById('sex');
+		            showUserPicker.addEventListener('tap', function (event) {
+		                userPicker.show(function (items) {
+		                    showUserPicker.innerText = items[0].text;
+		                    //返回 false 可以阻止选择框的关闭
+		                    //return false;
+		                });
+		            }, false);
+		        });
+		    })(mui, document);
+		    
+		     (function ($, doc) {
+		        $.init();
+		        $.ready(function () {
+		            var _getParam = function (obj, param) {
+		                return obj[param] || '';
+		            };
+		            var userPicker = new $.PopPicker();
+		            userPicker.setData([{
+		                value: 'ywj',
+		                text: '7'
+		            }, {
+		                value: 'aaa',
+		                text: '8'
+		            }, {
+		                value: 'lj',
+		                text: '9'
+		            }, {
+		                value: 'ymt',
+		                text: '10'
+		            }]);
+		            var showUserPicker = doc.getElementById('age');
+		            showUserPicker.addEventListener('tap', function (event) {
+		                userPicker.show(function (items) {
+		                    showUserPicker.innerText = items[0].text;
+		                    //返回 false 可以阻止选择框的关闭
+		                    //return false;
+		                });
+		            }, false);
+		        });
+		    })(mui, document);
+		</script>
+	</body>
+
+</html>

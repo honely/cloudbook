@@ -1,0 +1,21 @@
+.cont p:nth-of-type(1){
+	line-height: 4.32rem;
+	color: #363636;
+	font-size: 1.04rem;
+	text-align: center;
+	border-bottom: 2px solid #f5f5f5;
+}
+.cont p:nth-of-type(2){
+	font-size: 1.2rem;
+	color: #363636;
+	line-height: 3.52rem;
+	margin-left: 1.36rem;
+	font-weight: 500;
+}
+.cont p:nth-of-type(3){
+	font-size: 0.88rem;
+	padding: 0 0.64rem;
+	text-indent: 1rem;
+	line-height: 140%;
+	color: #474646;
+}

@@ -1,0 +1,38 @@
+.header {
+	height: 3.2rem;
+	width: 100%;
+	background-color: #68c31e;
+	position: relative;
+}
+
+.header a {
+	width: 0.88rem;
+	height: 1.6rem;
+	position: absolute;
+	top: 0.92rem;
+	left: 1.16rem;
+}
+
+.header a img {
+	width: 100%;
+}
+
+.header p {
+	line-height: 3.2rem;
+	text-align: center;
+	font-size: 1.44rem;
+	color: #fff;
+}
+
+.btn {
+	width: 24.6rem;
+	height: 3.2rem;
+	border: none;
+	background: #68c31e;
+	display: block;
+	color: #FFFFFF;
+	margin: 1.6rem auto 0;
+	color: #FFFFFF;
+	font-size: 1.28rem;
+	border-radius: 1.6rem;
+}

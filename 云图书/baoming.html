@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>报名预约</title>
+    <!--说明文字编码-->
+    <meta http-equiv="Content-type" content="text/html" charset="utf-8">
+    <!--针对 IE8 版本的一个特殊文件头标记，用于为 IE8 指定不同的页面渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--设备物理宽度等于等于页面宽度,页面初始缩放1:1,禁止用户调整缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <!--控制状态栏显示样式-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--解决uc字体变大问题-->
+    <meta name="wap-font-scale" content="no">
+    <!--手机号码不被显示为拨号链接-->
+    <meta content="telephone=no" name="format-detection"/>
+    <!--页面缓存时间的最大值是0秒，目的是不让页面缓存，每次访问必须到服务器读取-->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/baoming.css"/>
+    <link rel="stylesheet" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="css/mui.picker.css"/>
+    <link rel="stylesheet" href="css/mui.poppicker.css"/>
+</head>
+
+<body>
+<div class="header">
+    <a href="###">
+        <img src="images/back.png"/>
+    </a>
+    <p>报名</p>
+</div>
+<div class="cont">
+    <ul>
+        <li>
+            <p>姓名：</p>
+            <input type="text" maxlength="10"/>
+        </li>
+        <li>
+            <p>电话：</p>
+            <input type="tel" onkeyup="this.value=this.value.replace(/\D/gi,&quot;&quot;)" maxlength="11"/>
+        </li>
+        <li class="flex">
+            <div class="c">
+                <p>人数：</p>
+                <div>
+                    <button id='userPickerShow' type='button'>合计</button>
+                    <img src="images/icon-bottom.png"/>
+                </div>
+            </div>
+            <div class="c">
+                <p>大人：</p>
+                <div>
+                    <button id='showUserPicker' type='button'>0</button>
+                    <img src="images/icon-bottom.png"/>
+                </div>
+            </div>
+            <div class="c">
+                <p>小孩：</p>
+                <div>
+                    <button id='showUserPicker2' type='button'>0</button>
+                    <img src="images/icon-bottom.png"/>
+                </div>
+            </div>
+        </li>
+        <li>
+            <p>备注：</p>
+            <textarea></textarea>
+            <div class="clear"></div>
+        </li>
+    </ul>
+</div>
+<button class="btn">确定提交</button>
+<script type="text/javascript" src="js/screenSize.js"></script>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript" src="js/mui.picker.js"></script>
+<script type="text/javascript" src="js/mui.poppicker.js"></script>
+<script>
+    (function ($, doc) {
+        $.init();
+        $.ready(function () {
+            var _getParam = function (obj, param) {
+                return obj[param] || '';
+            };
+            var userPicker = new $.PopPicker();
+            userPicker.setData([{
+                value: 'ywj',
+                text: '1'
+            }, {
+                value: 'aaa',
+                text: '2'
+            }, {
+                value: 'lj',
+                text: '3'
+            }, {
+                value: 'ymt',
+                text: '4'
+            }, {
+                value: 'ymt',
+                text: '5'
+            }, {
+                value: 'ymt',
+                text: '6'
+            }]);
+            var showUserPicker = doc.getElementById('showUserPicker');
+            // var userResult = doc.getElementById('showUserPicker');
+            // var temp = 0;
+            var showUserPicker2 = doc.getElementById("showUserPicker2");
+            showUserPicker.addEventListener('tap', function (event) {
+                userPicker.show(function (items) {
+                    showUserPicker.innerText = items[0].text;
+                    // temp = items[0].text;
+                    //	alert(two.html);
+                    document.getElementById("userPickerShow").innerHTML = Number(items[0].text) + Number(showUserPicker2.innerText);
+                    //返回 false 可以阻止选择框的关闭
+                    //return false;
+                });
+            }, false);
+        });
+    })(mui, document);
+</script>
+<script>
+    (function ($, doc) {
+        $.init();
+        $.ready(function () {
+            var _getParam = function (obj, param) {
+                return obj[param] || '';
+            };
+            var userPicker = new $.PopPicker();
+            userPicker.setData([{
+                value: 'ywj',
+                text: '1'
+            }, {
+                value: 'aaa',
+                text: '2'
+            }, {
+                value: 'lj',
+                text: '3'
+            }, {
+                value: 'ymt',
+                text: '4'
+            }, {
+                value: 'ymt',
+                text: '5'
+            }, {
+                value: 'ymt',
+                text: '6'
+            }]);
+            var showUserPicker = doc.getElementById('showUserPicker');
+            var showUserPicker2 = doc.getElementById('showUserPicker2');
+            showUserPicker2.addEventListener('tap', function (event) {
+                userPicker.show(function (items) {
+                    showUserPicker2.innerText = items[0].text
+                    document.getElementById("userPickerShow").innerHTML = Number(showUserPicker.innerText) + Number(items[0].text);
+                    //返回 false 可以阻止选择框的关闭
+                    //return false;
+                });
+            }, false);
+        });
+    })(mui, document);
+</script>
+</body>
+
+</html>
